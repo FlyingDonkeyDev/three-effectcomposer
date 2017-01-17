@@ -15,7 +15,8 @@ module.exports = function (THREE) {
         , NoiseShader           = EffectComposer.NoiseShader            = require('./lib/shaders/noise')
         , RenderTargetShader    = EffectComposer.RenderTargetShader     = require('./lib/shaders/renderTarget')
         , SharpShader           = EffectComposer.SharpShader            = require('./lib/shaders/sharp')
-        , PhotoEditShader       = EffectComposer.PhotoEditShader        = require('./lib/shaders/photoEdit');
+        , PhotoEditShader       = EffectComposer.PhotoEditShader        = require('./lib/shaders/photoEdit')
+        , FresnelShader         = EffectComposer.FresnelShader          = require('./lib/shaders/fresnel');
 
     var RenderPass      = EffectComposer.RenderPass     = require('./lib/renderpass')(THREE)
         , ShaderPass    = EffectComposer.ShaderPass     = require('./lib/shaderpass')(THREE, EffectComposer)
