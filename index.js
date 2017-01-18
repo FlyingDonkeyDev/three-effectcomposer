@@ -22,7 +22,8 @@ module.exports = function (THREE) {
         , ShaderPass    = EffectComposer.ShaderPass     = require('./lib/shaderpass')(THREE, EffectComposer)
         , BloomPass     = EffectComposer.BloomPass      = require('./lib/bloompass')(THREE, EffectComposer)
         , MaskPass      = EffectComposer.MaskPass       = require('./lib/maskpass')(THREE)
-        , ClearMaskPass = EffectComposer.ClearMaskPass  = require('./lib/clearmaskpass')(THREE);
+        , ClearMaskPass = EffectComposer.ClearMaskPass  = require('./lib/clearmaskpass')(THREE)
+        , ClearPass     = EffectComposer.ClearPass      = require('./lib/clearpass')(THREE);
 
     function EffectComposer(renderer, renderTarget) {
 
